@@ -7,9 +7,9 @@ export class ProdutoAlimenticio extends Produto {
     preco: number,
     quantidade: number,
     public dataValidade?: Date,
-    cod_barras?: string
+    codigobarras?: string
   ) {
-    super(id, descricao, preco, quantidade, cod_barras);
+    super(id, descricao, preco, quantidade, codigobarras);
   }
 
   getCategoria(): string {

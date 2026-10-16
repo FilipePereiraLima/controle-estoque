@@ -4,7 +4,7 @@ export abstract class Produto {
     public descricao: string,
     public preco: number,
     public quantidade: number,
-    public cod_barras?: string
+    public codigobarras?: string
   ) {}
 
   abstract getCategoria(): string;

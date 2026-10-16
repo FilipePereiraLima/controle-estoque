@@ -6,11 +6,11 @@ export class ProdutoLimpeza extends Produto {
     descricao: string,
     preco: number,
     quantidade: number,
-    cod_barras?: string,
+    codigobarras?: string,
     public volumeML?: number,
     public inflamavel?: boolean
   ) {
-    super(id, descricao, preco, quantidade, cod_barras);
+    super(id, descricao, preco, quantidade, codigobarras);
   }
 
   getCategoria(): string {

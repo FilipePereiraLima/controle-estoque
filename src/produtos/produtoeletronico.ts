@@ -6,11 +6,11 @@ export class ProdutoEletronico extends Produto {
     descricao: string,
     preco: number,
     quantidade: number,
-    cod_barras?: string,
+    codigobarras?: string,
     public garantia?: number,
     public voltagem?: string
   ) {
-    super(id, descricao, preco, quantidade, cod_barras);
+    super(id, descricao, preco, quantidade, codigobarras);
   }
 
   getCategoria(): string {
