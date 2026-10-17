@@ -1,0 +1,2 @@
+O tema sorteado foi de sistema de controle de estoque.
+Com isto decidi criar um sistema padrão de gerenciamento de estoque, para produtos eletronicos, material de construção, produtos comuns e de limpezas.
