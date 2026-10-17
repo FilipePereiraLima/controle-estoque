@@ -2,7 +2,6 @@ import { Produto } from "./produto";
 
 export class ProdutoEletronico extends Produto {
   constructor(
-    id: number,
     descricao: string,
     preco: number,
     quantidade: number,
@@ -10,7 +9,7 @@ export class ProdutoEletronico extends Produto {
     public garantia?: number,
     public voltagem?: string
   ) {
-    super(id, descricao, preco, quantidade, codigobarras);
+    super(descricao, preco, quantidade, codigobarras);
   }
 
   getCategoria(): string {

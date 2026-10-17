@@ -1,6 +1,6 @@
 export abstract class Produto {
+  id?: number
   constructor(
-    public id: number,
     public descricao: string,
     public preco: number,
     public quantidade: number,
