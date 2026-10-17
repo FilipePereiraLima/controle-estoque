@@ -14,4 +14,14 @@ export class ProdutoAlimenticio extends Produto {
   getCategoria(): string {
     return "Alimentício";
   }
+
+  clonar(): Produto {
+    return new ProdutoAlimenticio(
+      this.descricao,
+      this.preco,
+      this.quantidade,
+      this.dataValidade ? new Date(this.dataValidade) : undefined,
+      this.codigobarras
+    );
+  }
 }

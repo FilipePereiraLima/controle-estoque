@@ -14,4 +14,14 @@ export class ProdutoMaterialConstrucao extends Produto {
   getCategoria(): string {
     return "Material de Construcao";
   }
+
+  clonar(): Produto {
+    return new ProdutoMaterialConstrucao(
+      this.descricao,
+      this.preco,
+      this.quantidade,
+      this.codigobarras,
+      this.unidadeMedida
+    );
+  }
 }

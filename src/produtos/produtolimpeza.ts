@@ -15,4 +15,15 @@ export class ProdutoLimpeza extends Produto {
   getCategoria(): string {
     return "Limpeza";
   }
+
+  clonar(): Produto {
+    return new ProdutoLimpeza(
+      this.descricao,
+      this.preco,
+      this.quantidade,
+      this.codigobarras,
+      this.volumeML,
+      this.inflamavel
+    );
+  }
 }

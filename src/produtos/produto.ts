@@ -8,4 +8,5 @@ export abstract class Produto {
   ) {}
 
   abstract getCategoria(): string;
+  abstract clonar(): Produto;
 }

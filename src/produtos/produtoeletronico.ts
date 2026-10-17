@@ -15,4 +15,15 @@ export class ProdutoEletronico extends Produto {
   getCategoria(): string {
     return "Eletronico";
   }
+
+  clonar(): Produto {
+    return new ProdutoEletronico(
+      this.descricao,
+      this.preco,
+      this.quantidade,
+      this.codigobarras,
+      this.garantia,
+      this.voltagem
+    );
+  }
 }
